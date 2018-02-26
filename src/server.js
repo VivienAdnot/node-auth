@@ -18,4 +18,4 @@ bootstrap.run(app);
 app.use(responseSender.errorResponseSender);
 
 app.listen(8026);
-console.log("server listening on 8026");
+console.log("server listening on http://localhost:8026");

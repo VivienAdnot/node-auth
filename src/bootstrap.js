@@ -1,8 +1,10 @@
 var anchorRoutes = require('./Anchors/anchors.routes');
+var authRoutes = require('./Auth/index.routes');
 
 function run(app) {
     mountRoutes(app, [
-        anchorRoutes
+        anchorRoutes,
+        authRoutes
     ]);
 }
 
