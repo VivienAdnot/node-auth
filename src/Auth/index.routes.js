@@ -8,6 +8,13 @@ const routes = [{
         handlers.register,
         responseSender.responseSender
     ]
+}, {
+    method: 'GET',
+    path: '/auth/authenticate/:signature',
+    handlers: [
+        handlers.authenticate,
+        responseSender.responseSender
+    ]
 }];
 
 module.exports = routes;
